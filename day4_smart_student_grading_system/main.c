@@ -21,3 +21,50 @@ grade='F';
 printf(remarks,"Fail");
 }
 else
+{
+if (percentage>=45&&percentage<50&&attendance>=90)
+{
+percentage+=5;
+if (percentage>100)
+percentage=100;
+}
+if(percentage>=90)
+{
+grade='A';
+printf(remarks,"Excellent");
+printf("\n(Note: A+grade awarded)\n");
+}
+else if
+(percentage>=80)
+{
+grade='A';
+printf(remarks,"Very Good");
+}
+else if (percentage>=70)
+{
+grade='B';
+printf(remarks,"Good");
+}
+else if
+(percentage>=60)
+{
+grade='C';
+printf(remarks,"Average");
+}
+else if
+(percentage>=50)
+{
+grade='D';
+printf(remarks,"Pass");
+}
+else
+{
+grade='F';
+printf(remarks,"Fail");
+}}
+printf("Total Percentage:%.2f%%\n",percentage);
+printf("Attendance:%.2f%%\n",attendance);
+printf("Final Grade:%c\n",grade);
+printf("Remarks:%s\n",remarks);
+return 0;
+}
